@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Barvy:
+pozadí stránky: #FAFAFA;
+černá: #000000;
+šedá: #8B8B8B;
+primární modrá: #407BFF;
+
+*/
+
+.container {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  background-color: #fafafa;
+  color: #8b8b8b;
+  padding-bottom: 60px;
+}
+
+.logo {
+  margin: auto;
+  width: 70%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #000000;
+}
+
+h2 {
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+  padding-top: 45px;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+hr {
+  width: 60px;
+  border: none;
+  border-bottom: 2px solid #407bff;
+}
+
+.paragraph {
+  margin: 15px 0 30px 0;
+}
+
+.button-row {
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fafafa;
+  background-color: #407bff;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+
+.gray {
+  background-color: #8b8b8b;
+}
+
+.box {
+  margin-top: 30px;
+}
+.panel {
+  box-shadow: 0px 4px 6px #407bff1f;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: white;
+  display: flex;
+  padding: 20px;
+}
+
+.servis {
+  font-size: 13px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+
+
+@media screen and (min-width: 640px) {
+  .button-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-row {
+    flex: 0 0 auto;
+    margin: 0 10px;
+  }
+
+  .box {
+    display: flex;
+  }
+  .panel {
+    display: block;
+    margin: 0 10px;
+  }
+  .servis {
+    text-align: center;
+    padding: 0;
+  }
+
+}
+
+
+
+@media screen and (min-width: 1100px) {
+  .container {
+    padding: 80px;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-text {
+    order: 1;
+    text-align: left;
+  }
+
+  .button-section {
+    justify-content: flex-start;
+  }
+
+  .button-row {
+    margin-left: 0;
+  }
+
+  .logo {
+    order: 2;
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+  }
+
+  .first {
+    margin-bottom: 80px;
+  }
+
+  .first .box {
+    order: 1;
+    flex: 1 1 55%;
+  }
+
+  .first .section-text {
+    flex: 1 1 45%;
+    text-align: left;
+    padding-left: 60px;
+    order: 2;
+  }
+
+  .second .box {
+    flex: 1 1 55%;
+    order: 2;
+  }
+
+  .second .section-text {
+    order: 1;
+    flex: 1 1 45%;
+    text-align: left;
+    padding-right: 60px;
+  }
+  
+}
