@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -7,26 +7,28 @@ pozadí stránky: #FAFAFA;
 černá: #000000;
 šedá: #8B8B8B;
 primární modrá: #407BFF;
-
 */
 
-.container {
+body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  text-align: center;
   background-color: #fafafa;
   color: #8b8b8b;
-  padding-bottom: 60px;
+  margin: 10px;
 }
 
+.container {
+  max-width: 1040px;
+  margin: 60px 10px;
+  text-align: center;
+ }
+
 .logo {
-  margin: auto;
   width: 70%;
 }
 
 h1 {
-  text-align: center;
   font-size: 28px;
   color: #000000;
 }
@@ -35,19 +37,17 @@ h2 {
   font-size: 16px;
   color: #000000;
   font-weight: bold;
-  padding-top: 45px;
   margin: 0 0 15px 0;
-  text-align: center;
 }
 
 hr {
   width: 60px;
-  border: none;
+  border: 0;
   border-bottom: 2px solid #407bff;
 }
 
 .paragraph {
-  margin: 15px 0 30px 0;
+  margin: 15px auto 30px auto;
 }
 
 .button-row {
@@ -58,6 +58,8 @@ hr {
   display: inline-block;
   text-decoration: none;
   color: #fafafa;
+  font-size: 14px;
+  font-weight: 400;
   background-color: #407bff;
   border-radius: 20px;
   padding: 10px 30px;
@@ -67,11 +69,12 @@ hr {
   background-color: #8b8b8b;
 }
 
-.box {
-  margin-top: 30px;
+.section {
+  margin-top: 60px;
 }
+
 .panel {
-  box-shadow: 0px 4px 6px #407bff1f;
+  box-shadow: 0px 4px 6px #407BFF1F;
   border-radius: 5px;
   margin-bottom: 15px;
   background-color: white;
@@ -79,7 +82,7 @@ hr {
   padding: 20px;
 }
 
-.servis {
+.content {
   font-size: 13px;
   text-align: left;
   padding-left: 30px;
@@ -88,57 +91,82 @@ hr {
 
 
 @media screen and (min-width: 640px) {
-  .button-section {
-    display: flex;
-    justify-content: center;
+  .button-row {
+    display: inline-block;
   }
 
-  .button-row {
-    flex: 0 0 auto;
-    margin: 0 10px;
+  .gray {
+    margin-left: 20px;
+  }
+
+  .section {
+    margin-top: 80px;
   }
 
   .box {
     display: flex;
   }
+
   .panel {
     display: block;
     margin: 0 10px;
   }
-  .servis {
+
+  .icon {
+    padding-top: 20px;
+  }
+
+  .content {
     text-align: center;
     padding: 0;
   }
 
+  .paragraph {
+     width: 550px;
+     text-align: center;
+  }
 }
 
 
 
 @media screen and (min-width: 1100px) {
   .container {
-    padding: 80px;
+    margin: 60px auto;
   }
 
-  .hero {
+  .header {
     display: flex;
     align-items: center;
   }
 
-  .hero-text {
+  .header-text {
     order: 1;
+    flex: 0 0 490px;
+    padding-right: 60px;
     text-align: left;
   }
 
-  .button-section {
-    justify-content: flex-start;
+  h1 {
+    text-align: left;
   }
 
-  .button-row {
+  hr {
     margin-left: 0;
   }
 
-  .logo {
+  .paragraph {
+    text-align: left;
+    width: 100%;
+  }
+
+  .header-logo {
+    flex: 0 0 490px;
     order: 2;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 425px;
   }
 
   .section {
@@ -146,32 +174,32 @@ hr {
     align-items: center;
   }
 
-  .first {
-    margin-bottom: 80px;
-  }
-
   .first .box {
     order: 1;
-    flex: 1 1 55%;
+    flex: 0 0 550px;
   }
 
   .first .section-text {
-    flex: 1 1 45%;
+    order: 2;
+    flex: 0 0 430px;
     text-align: left;
     padding-left: 60px;
-    order: 2;
+  }
+
+  .section-text .paragraph {
+    margin-bottom: 0;
   }
 
   .second .box {
-    flex: 1 1 55%;
     order: 2;
+    flex: 0 0 550px;
   }
 
   .second .section-text {
     order: 1;
-    flex: 1 1 45%;
+    flex: 0 0 430px;
     text-align: left;
-    padding-right: 60px;
+     padding-right: 60px;
   }
   
 }
