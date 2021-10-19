@@ -22,7 +22,7 @@ body {
   max-width: 1040px;
   margin: 60px 10px;
   text-align: center;
- }
+}
 
 .logo {
   width: 70%;
@@ -74,7 +74,7 @@ hr {
 }
 
 .panel {
-  box-shadow: 0px 4px 6px #407BFF1F;
+  box-shadow: 0px 4px 6px #407bff1f;
   border-radius: 5px;
   margin-bottom: 15px;
   background-color: white;
@@ -87,8 +87,6 @@ hr {
   text-align: left;
   padding-left: 30px;
 }
-
-
 
 @media screen and (min-width: 640px) {
   .button-row {
@@ -122,12 +120,10 @@ hr {
   }
 
   .paragraph {
-     width: 550px;
-     text-align: center;
+    width: 550px;
+    text-align: center;
   }
 }
-
-
 
 @media screen and (min-width: 1100px) {
   .container {
@@ -199,7 +195,6 @@ hr {
     order: 1;
     flex: 0 0 430px;
     text-align: left;
-     padding-right: 60px;
+    padding-right: 60px;
   }
-  
 }
